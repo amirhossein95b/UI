@@ -1,0 +1,45 @@
+@import "../core/less/alert.less";
+@import "../configs/config.less";
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    font-family: @font[family];
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.alert {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: @font[xs];
+}
+
+// alert
+
+#alert(primary, @backgroundColor[primary], darken(@backgroundColor[primary], 10%), #fff, gold);
+#alert(secondary, @backgroundColor[secondary], darken(@backgroundColor[secondary], 10%), #fff, gold);
+#alert(info, @backgroundColor[info], darken(@backgroundColor[info], 10%), #fff, gold);
+#alert(warning, @backgroundColor[warning], darken(@backgroundColor[warning], 10%), darken(@backgroundColor[warning], 35%), #011627);
+#alert(success, @backgroundColor[success], darken(@backgroundColor[success], 10%), #fff, gold);
+#alert(danger, @backgroundColor[danger], darken(@backgroundColor[danger], 10%), #fff, gold);
+#alert(dark, @backgroundColor[dark], darken(@backgroundColor[dark], 10%), #fff, gold);
+
+// flat alerts
+
+#alert_flat(primary, @backgroundFlatColor[primary], darken(@backgroundFlatColor[primary], 10%), darken(@backgroundFlatColor[primary], 25%), darken(@backgroundFlatColor[primary], 40%));
+#alert_flat(secondary, @backgroundFlatColor[secondary], darken(@backgroundFlatColor[secondary], 10%), darken(@backgroundFlatColor[secondary], 40%), darken(@backgroundFlatColor[secondary], 40%));
+#alert_flat(info, @backgroundFlatColor[info], darken(@backgroundFlatColor[info], 10%), darken(@backgroundFlatColor[info], 40%), darken(@backgroundFlatColor[info], 40%));
+#alert_flat(warning, @backgroundFlatColor[warning], darken(@backgroundFlatColor[warning], 10%), darken(@backgroundFlatColor[warning], 40%), darken(@backgroundFlatColor[warning], 40%));
+#alert_flat(success, @backgroundFlatColor[success], darken(@backgroundFlatColor[success], 10%), darken(@backgroundFlatColor[success], 40%), darken(@backgroundFlatColor[success], 40%));
+#alert_flat(danger, @backgroundFlatColor[danger], darken(@backgroundFlatColor[danger], 10%), darken(@backgroundFlatColor[danger], 40%), darken(@backgroundFlatColor[danger], 40%));
+#alert_flat(dark, @backgroundFlatColor[dark], darken(@backgroundFlatColor[dark], 10%), darken(@backgroundFlatColor[dark], 40%), darken(@backgroundFlatColor[dark], 40%));
+// outline alerts
+
+#alert_outline(primary, @backgroundOutlineColor[primary], @backgroundOutlineColor[primary]);
+#alert_outline(secondary, @backgroundOutlineColor[secondary], @backgroundOutlineColor[secondary]);
+#alert_outline(info, @backgroundOutlineColor[info], @backgroundOutlineColor[info]);
+#alert_outline(warning, @backgroundOutlineColor[warning], @backgroundOutlineColor[warning]);
+#alert_outline(success, @backgroundOutlineColor[success], @backgroundOutlineColor[success]);
+#alert_outline(danger, @backgroundOutlineColor[danger], @backgroundOutlineColor[danger]);
+#alert_outline(dark, @backgroundOutlineColor[dark], @backgroundOutlineColor[dark]);

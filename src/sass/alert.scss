@@ -1,0 +1,48 @@
+@import "../core/sass/alert.scss";
+@import "../configs/config.scss";
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+::selection {
+    background-color: #073b4c;
+    color: #fff;
+}
+
+body {
+    font-family: map-get($font, "family");
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.alert {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: map-get($font, "xs");
+}
+
+// alerts
+@include alert("primary", map-get($backgroundColor, "primary"), darken(map-get($backgroundColor, "primary"), 10%), #fff, gold);
+@include alert("secondary", map-get($backgroundColor, "secondary"), darken(map-get($backgroundColor, "secondary"), 10%), #fff, gold);
+@include alert("info", map-get($backgroundColor, "info"), darken(map-get($backgroundColor, "info"), 10%), #fff, gold);
+@include alert("warning", map-get($backgroundColor, "warning"), darken(map-get($backgroundColor, "warning"), 10%), darken(map-get($backgroundColor, "warning"), 35%), #011627);
+@include alert("success", map-get($backgroundColor, "success"), darken(map-get($backgroundColor, "success"), 10%), #fff, gold);
+@include alert("danger", map-get($backgroundColor, "danger"), darken(map-get($backgroundColor, "danger"), 10%), #fff, gold);
+@include alert("dark", map-get($backgroundColor, "dark"), darken(map-get($backgroundColor, "dark"), 10%), #fff, gold);
+// flat alerts
+
+@include alert_flat("primary", map-get($backgroundFlatColor, "primary"), darken(map-get($backgroundFlatColor, "primary"), 10%), darken(map-get($backgroundFlatColor, "primary"), 25%), darken(map-get($backgroundFlatColor, "primary"), 40%));
+@include alert_flat("secondary", map-get($backgroundFlatColor, "secondary"), darken(map-get($backgroundFlatColor, "secondary"), 10%), darken(map-get($backgroundFlatColor, "secondary"), 40%), darken(map-get($backgroundFlatColor, "secondary"), 40%));
+@include alert_flat("info", map-get($backgroundFlatColor, "info"), darken(map-get($backgroundFlatColor, "info"), 10%), darken(map-get($backgroundFlatColor, "info"), 40%), darken(map-get($backgroundFlatColor, "info"), 40%));
+@include alert_flat("warning", map-get($backgroundFlatColor, "warning"), darken(map-get($backgroundFlatColor, "warning"), 10%), darken(map-get($backgroundFlatColor, "warning"), 40%), darken(map-get($backgroundFlatColor, "warning"), 40%));
+@include alert_flat("success", map-get($backgroundFlatColor, "success"), darken(map-get($backgroundFlatColor, "success"), 10%), darken(map-get($backgroundFlatColor, "success"), 40%), darken(map-get($backgroundFlatColor, "success"), 40%));
+@include alert_flat("danger", map-get($backgroundFlatColor, "danger"), darken(map-get($backgroundFlatColor, "danger"), 10%), darken(map-get($backgroundFlatColor, "danger"), 40%), darken(map-get($backgroundFlatColor, "danger"), 40%));
+@include alert_flat("dark", map-get($backgroundFlatColor, "dark"), darken(map-get($backgroundFlatColor, "dark"), 10%), darken(map-get($backgroundFlatColor, "dark"), 40%), darken(map-get($backgroundFlatColor, "dark"), 40%));
+// outline alerts
+
+@include alert_outline("primary", map-get($backgroundOutlineColor, "primary"), map-get($backgroundColor, "primary"));
+@include alert_outline("secondary", map-get($backgroundOutlineColor, "secondary"), map-get($backgroundColor, "secondary"));
+@include alert_outline("info", map-get($backgroundOutlineColor, "info"), map-get($backgroundColor, "info"));
+@include alert_outline("warning", map-get($backgroundOutlineColor, "warning"), map-get($backgroundColor, "warning"));
+@include alert_outline("success", map-get($backgroundOutlineColor, "success"), map-get($backgroundColor, "success"));
+@include alert_outline("danger", map-get($backgroundOutlineColor, "danger"), map-get($backgroundColor, "danger"));
+@include alert_outline("dark", map-get($backgroundOutlineColor, "dark"), map-get($backgroundColor, "dark"));

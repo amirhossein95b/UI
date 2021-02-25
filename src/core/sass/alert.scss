@@ -1,0 +1,33 @@
+@mixin alert($class_name, $bg_color, $border_color, $text_color, $link_color) {
+    .alert-#{$class_name} {
+        background-color: $bg_color;
+        border: 1px solid $border_color;
+        color: $text_color;
+        a {
+            color: $link_color;
+        }
+    }
+}
+
+@mixin alert_flat($class_name, $bg_color, $border_color, $text_color, $link_color) {
+    .alert-#{$class_name}-flat {
+        background-color: $bg_color;
+        border: 1px solid $border_color;
+        color: $text_color;
+        a {
+            color: $link_color;
+            font-weight: bold;
+        }
+    }
+}
+
+@mixin alert_outline($class_name, $border_color, $text_color) {
+    .alert-#{$class_name}-outline {
+        border: 1px solid $border_color;
+        color: $text_color;
+        a {
+            color: $text_color;
+            font-weight: bold;
+        }
+    }
+}

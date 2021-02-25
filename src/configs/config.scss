@@ -1,0 +1,75 @@
+// background colors
+
+$backgroundColor: (
+    "primary": #4361ee,
+    "secondary": #335c67,
+    "info": #00bbf9,
+    "warning": #ffb703,
+    "success": #00e640,
+    "danger": #e71d36,
+    "dark": #011627,
+);
+
+// background flat colors
+
+$backgroundFlatColor: (
+    "primary": lighten(#4361ee, 30%),
+    "secondary": lighten(#335c67, 50%),
+    "info": lighten(#00bbf9, 40%),
+    "warning": lighten(#ffb703, 35%),
+    "success": lighten(#00e640, 43%),
+    "danger": lighten(#e71d36, 40%),
+    "dark": #c5c5c5,
+);
+
+// background flat colors
+
+$backgroundOutlineColor: (
+    "primary": #4361ee,
+    "secondary": #335c67,
+    "info": #00bbf9,
+    "warning": #ffb703,
+    "success": #00e640,
+    "danger": #e71d36,
+    "dark": #011627,
+);
+
+
+// text colors
+$textColor: (
+    "primary": #fff,
+    "secondary": #fff,
+    "info": #fff,
+    "warning": #fff,
+    "success": #fff,
+    "danger": #fff,
+    "dark": #fff,
+);
+
+// font sizes
+$font: (
+    "family": ('Varela Round', sans-serif),
+    "sm": 1em,
+    "xs": 1.05em,
+    "md": 1.1em,
+    "lg": 2em,
+    "xl": 3em,
+);
+
+// margin sizes
+$margin: (
+    "sm": 1px,
+    "xs": 1px,
+    "md": 1px,
+    "lg": 1px,
+    "xl": 1px,
+);
+
+// padding sizes
+$padding: (
+    "sm": 1px,
+    "xs": 1px,
+    "md": 1px,
+    "lg": 1px,
+    "xl": 1px,
+);

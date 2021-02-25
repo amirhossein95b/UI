@@ -1,0 +1,39 @@
+{
+    "name": "user-interface",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./src/js/index.js",
+    "scripts": {
+        "build": "webpack",
+        "serve": "webpack serve"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.12.17",
+        "@babel/preset-env": "^7.12.17",
+        "@babel/preset-es2015": "^7.0.0-beta.53",
+        "autoprefixer": "^10.2.4",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^5.0.2",
+        "csso-loader": "^0.3.1",
+        "extract-loader": "^5.1.0",
+        "file-loader": "^6.2.0",
+        "html-loader": "^2.0.0",
+        "html-webpack-plugin": "^5.2.0",
+        "less": "^4.1.1",
+        "less-loader": "^8.0.0",
+        "node-sass": "^5.0.0",
+        "postcss-loader": "^5.0.0",
+        "sass": "^1.32.8",
+        "sass-loader": "^11.0.1",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.23.0",
+        "webpack-build-notifier": "^2.1.1",
+        "webpack-cli": "^4.5.0",
+        "webpack-dev-server": "^3.11.2",
+        "webpack-notifier": "^1.13.0"
+    },
+    "dependencies": {}
+}
