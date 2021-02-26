@@ -9,6 +9,7 @@ let sass_files = [
     './src/sass/index.scss',
     './src/sass/texts.scss',
     './src/sass/background.scss',
+    './src/sass/breadcrumb.scss',
 ];
 
 let less_files = [
@@ -17,6 +18,7 @@ let less_files = [
     './src/less/index.less',
     './src/less/texts.less',
     './src/less/background.less',
+    './src/less/breadcrumb.less',
 ];
 
 let files = [];

@@ -1,0 +1,19 @@
+@import "../../configs/config.scss";
+
+@mixin breadcrumb($class_name, $seperator) {
+    .breadcrumb {
+        &.#{$class_name} {
+            li {
+                &:before {
+                    content: "#{$seperator}" !important;
+                }
+                &:first-child {
+                    &:before {
+                        content: '' !important;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

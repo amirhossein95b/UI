@@ -1,0 +1,38 @@
+@import "../configs/config.scss";
+@import "../core/sass/breadcrumb.scss";
+
+// custom breadcrumb
+@include breadcrumb($class_name: "custom", $seperator: "/");
+
+// original breadcrumb
+.breadcrumb {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    li {
+        font-size: map-get($font, "xs");
+        padding-left: .5rem;
+        a {
+            color: map-get($textColor, "primary");
+        }
+        &:before {
+            content: map-get($app, 'breadcrumb-sperator');
+            padding-right: .5rem;
+            color: map-get($textColor, "secondary");
+        }
+        &:first-child {
+            &:before {
+                content: '';
+                padding: 0;
+            }
+        }
+        &.active {
+            color: map-get($textColor, "secondary");
+            font-weight: bold;
+            &:before {
+                font-weight: normal;
+            }
+        }
+    }
+}
