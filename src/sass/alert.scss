@@ -20,6 +20,13 @@ body {
     font-size: map-get($font, "xs");
 }
 
+.alert-xs {
+    width: 100%;
+    padding: .7rem;
+    border-radius: 4px;
+    font-size: .8em;
+}
+
 // alerts
 @include alert("primary", map-get($backgroundColor, "primary"), darken(map-get($backgroundColor, "primary"), 10%), #fff, gold);
 @include alert("secondary", map-get($backgroundColor, "secondary"), darken(map-get($backgroundColor, "secondary"), 10%), #fff, gold);

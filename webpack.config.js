@@ -4,7 +4,6 @@ const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 const config = require('./config');
 
 let sass_files = [
-    './src/sass/buttons.scss',
     './src/sass/alert.scss',
 ];
 
