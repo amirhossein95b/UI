@@ -1,0 +1,8 @@
+@import "../configs/config.scss";
+
+@each $bg, $bg-value in $backgroundColor {
+    .bg-#{$bg} {
+        background-color: $bg-value;
+        color: map-get($backgroundTextColor, $bg);
+    }
+}

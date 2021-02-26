@@ -1,3 +1,8 @@
+// App Configs
+
+@app: {
+    radius: 4px;
+};
 // background colors
 
 @backgroundColor: {
@@ -8,6 +13,7 @@
     success: #00e640;
     danger: #e71d36;
     dark: #011627;
+    light: #f6f6f6;
 };
 
 // background flat colors
@@ -20,6 +26,7 @@
     success: lighten(#00e640, 43%);
     danger: lighten(#e71d36, 40%);
     dark: #c5c5c5;
+    light: #f6f6f6;
 };
 
 // background flat colors
@@ -34,9 +41,8 @@
     dark: #011627;
 };
 
-
-// text colors
-@textColor: {
+// background text colors
+@backgroundTextColor: {
     primary: #fff;
     secondary: #fff;
     info: #fff;
@@ -44,15 +50,28 @@
     success: #fff;
     danger: #fff;
     dark: #fff;
+    light: #011627;
+};
+
+// text colors
+@textColor: {
+    primary: #4361ee;
+    secondary: #335c67;
+    info: #00bbf9;
+    warning: #ffb703;
+    success: #00e640;
+    danger: #e71d36;
+    dark: #011627;
+    light: #fff;
 };
 
 // font
 @family: 'Varela Round', sans-serif;
 @font: {
     family: @family;
-    sm: 1em;
-    xs: 1.05em;
-    md: 1.1em;
+    xs: 1em;
+    sm: 1.05em;
+    md: 1.2em;
     lg: 2em;
     xl: 3em;
 };

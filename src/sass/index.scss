@@ -1,0 +1,9 @@
+@import "../configs/config.scss";
+
+.radius {
+    border-radius: map-get($app, "radius");
+}
+
+.rounded {
+    border-radius: 50rem;
+}

@@ -1,0 +1,8 @@
+@import "../configs/config.less";
+
+each(@backgroundColor, {
+    .bg-@{key} {
+        background-color: @value;
+        color: @backgroundTextColor[@key];
+    }
+});

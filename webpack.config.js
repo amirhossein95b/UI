@@ -5,10 +5,18 @@ const config = require('./config');
 
 let sass_files = [
     './src/sass/alert.scss',
+    './src/sass/badge.scss',
+    './src/sass/index.scss',
+    './src/sass/texts.scss',
+    './src/sass/background.scss',
 ];
 
 let less_files = [
     './src/less/alert.less',
+    './src/less/badge.less',
+    './src/less/index.less',
+    './src/less/texts.less',
+    './src/less/background.less',
 ];
 
 let files = [];
