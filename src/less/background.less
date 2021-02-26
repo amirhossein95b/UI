@@ -3,6 +3,6 @@
 each(@backgroundColor, {
     .bg-@{key} {
         background-color: @value;
-        color: @backgroundTextColor[@key];
+        color: @backgroundTextColor[$@key];
     }
 });
